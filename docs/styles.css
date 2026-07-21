@@ -24,6 +24,15 @@ body {
   align-items: center;
   gap: 14px;
 }
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #d8e2ea;
+  background: #fff;
+  flex: 0 0 auto;
+}
 .brand-name {
   font-weight: 700;
   font-size: 18px;
