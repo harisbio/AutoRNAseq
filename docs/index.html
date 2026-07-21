@@ -4,54 +4,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AutoRNAseq</title>
-  <meta name="description" content="AutoRNAseq is a local Dockerized RNA-seq analysis platform for non-coders and researchers who want a guided workflow without hosting costs.">
+  <meta name="description" content="AutoRNAseq is a local Dockerized RNA-seq analysis platform with a guided workflow for non-coders and researchers.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="page">
     <section class="hero">
-      <div class="eyebrow">Local RNA-seq analysis, no hosting bill</div>
-      <h1>AutoRNAseq</h1>
-      <p class="lead">A browser-based RNA-seq workflow that runs on the user's own computer with Docker. Open the app locally, keep data private, and move from FASTQ files to differential expression, enrichment, PPI, and biomarker discovery without coding.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/AutoRNAseq/AutoRNAseq/releases/latest">Download latest release</a>
-        <a class="button secondary" href="#quick-start">Quick start</a>
+      <div class="hero-copy">
+        <div class="eyebrow">Local RNA-seq analysis, no hosting cost</div>
+        <h1>AutoRNAseq</h1>
+        <p class="lead">A browser-based RNA-seq workflow that runs on the user's own computer with Docker. Keep data private, avoid server setup, and move from FASTQ files to differential expression, enrichment, PPI, and biomarker discovery without coding.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/AutoRNAseq/AutoRNAseq/releases/latest">Download latest release</a>
+          <a class="button secondary" href="#quick-start">Quick start</a>
+        </div>
+        <p class="note">After installation, open <code>http://localhost:3838</code> in your browser.</p>
       </div>
-      <p class="note">After installation, the app opens at <code>http://localhost:3838</code>.</p>
+      <div class="hero-media">
+        <img src="assets/app_logo.png" alt="AutoRNAseq logo" class="hero-logo">
+        <div class="hero-caption">
+          <strong>Local-first workflow</strong>
+          <span>Dockerized, guided, and designed for non-coders.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="requirements">
+      <div class="strip-item">
+        <span class="strip-label">You need</span>
+        <strong>Docker Desktop</strong>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">You need</span>
+        <strong>FASTQ files or SRA accessions</strong>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">You need</span>
+        <strong>A browser and local disk space</strong>
+      </div>
+      <div class="strip-item">
+        <span class="strip-label">You get</span>
+        <strong>Results at <code>localhost:3838</code></strong>
+      </div>
+    </section>
+
+    <section class="shots">
+      <div class="section-heading">
+        <h2>What it looks like</h2>
+        <p>One landing page, one local app, and a guided module flow once the container is running.</p>
+      </div>
+      <div class="shot-grid">
+        <figure class="shot">
+          <img src="assets/workflow.png" alt="AutoRNAseq workflow diagram">
+          <figcaption>End-to-end workflow overview</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/app_logo.png" alt="AutoRNAseq logo">
+          <figcaption>Brand and app identity</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="panel" id="quick-start">
-      <h2>Quick start for non-coders</h2>
-      <ol>
+      <div class="section-heading">
+        <h2>Quick start for non-coders</h2>
+        <p>The shortest route from download to results.</p>
+      </div>
+      <ol class="steps">
         <li>Download the latest release from GitHub.</li>
         <li>Install Docker Desktop if it is not already installed.</li>
-        <li>Run the included startup script for Windows or macOS/Linux.</li>
+        <li>Run the Windows or macOS/Linux startup script from the release package.</li>
         <li>Open <code>http://localhost:3838</code> in your browser.</li>
-        <li>Upload your FASTQ files and metadata, then follow the sidebar modules.</li>
+        <li>Upload FASTQ files and metadata, then follow the sidebar modules.</li>
       </ol>
     </section>
 
-    <section class="grid">
+    <section class="feature-grid">
       <article class="card">
         <h2>What it does</h2>
-        <p>Quality control, trimming, alignment, quantification, DESeq2 analysis, GO/KEGG/GSEA, STRINGdb PPI networks, and machine-learning biomarker ranking.</p>
+        <p>Quality control, trimming, alignment, quantification, DESeq2 differential expression, GO/KEGG/GSEA interpretation, STRINGdb PPI networks, and machine-learning biomarker ranking.</p>
       </article>
       <article class="card">
         <h2>Why local</h2>
-        <p>No central server costs, no uploading large raw sequencing files to a hosted service, and a consistent containerized environment for reproducibility.</p>
+        <p>No central server bill, no uploading large raw sequencing files to a hosted service, and a consistent containerized environment for reproducibility.</p>
       </article>
       <article class="card">
         <h2>Best for</h2>
-        <p>Researchers, students, and labs that need a guided transcriptomics workflow without maintaining their own web infrastructure.</p>
+        <p>Researchers, students, and labs that want a guided transcriptomics workflow without maintaining their own web infrastructure.</p>
+      </article>
+      <article class="card">
+        <h2>Release flow</h2>
+        <p>GitHub Releases for downloads, GitHub Pages for the front door, and Docker for the actual app runtime.</p>
       </article>
     </section>
 
     <section class="panel">
-      <h2>Project links</h2>
+      <div class="section-heading">
+        <h2>Project links</h2>
+        <p>Everything a visitor needs to move from interest to installation.</p>
+      </div>
       <ul class="links">
-        <li><a href="https://harisbio.github.io/">Author portfolio</a></li>
-        <li><a href="https://github.com/AutoRNAseq/AutoRNAseq">Source repository</a></li>
         <li><a href="https://github.com/AutoRNAseq/AutoRNAseq/releases/latest">Latest release</a></li>
+        <li><a href="https://github.com/AutoRNAseq/AutoRNAseq">Source repository</a></li>
+        <li><a href="https://harisbio.github.io/">Author portfolio</a></li>
+        <li><a href="mailto:mharis.202101862@gcuf.edu.pk">Support email</a></li>
       </ul>
     </section>
   </main>
