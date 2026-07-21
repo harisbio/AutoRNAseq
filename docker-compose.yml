@@ -1,0 +1,16 @@
+services:
+  shinyapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: autornaseq:1.0.0
+    container_name: autornaseq-app
+    ports:
+      - "3838:3838"
+    environment:
+      - SHINY_MAX_REQUEST_SIZE=12884901888
+      - FASTQ_HOST_PATH=/data/fastq
+      - FASTQ_MOUNT_PATH=/data/fastq
+    volumes:
+      - ./AutoRNAseq_User_Data:/data/fastq
+    restart: unless-stopped

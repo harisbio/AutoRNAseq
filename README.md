@@ -1,10 +1,73 @@
 # AutoRNAseq
 
-[Open the landing page](https://harisbio.github.io/AutoRNAseq/)
+[Open the landing page](https://AutoRNAseq.github.io/AutoRNAseq)
 
 AutoRNAseq is a Dockerized, browser-based RNA-seq analysis platform for end-to-end transcriptomics workflows and machine-learning-assisted biomarker discovery. It is designed for researchers who want a guided local application instead of a hosted web service, so sequencing data stays on their own machine or institutional system.
 
 The app runs locally in a browser at `http://localhost:3838` after Docker starts. This makes it practical for non-coders, keeps analysis private, and gives every user the same reproducible software environment.
+
+## Installation at a glance
+
+Choose one of the two supported paths:
+
+1. Docker, recommended for most users
+2. R package installation, for advanced users who already manage R dependencies
+
+## 1. Docker install
+
+### Prerequisites
+
+- Docker Desktop
+- Internet access for the first build
+- Enough disk space for your FASTQ files, reference files, and outputs
+
+### Start AutoRNAseq
+
+From the project folder:
+
+```powershell
+docker compose up -d --build shinyapp
+```
+
+Or use the provided launchers:
+
+```text
+start-autornaseq-windows.bat
+start-autornaseq-mac-linux.sh
+```
+
+Then open:
+
+```text
+http://localhost:3838
+```
+
+### Stop AutoRNAseq
+
+```powershell
+docker compose down
+```
+
+## 2. R install
+
+If you want to run AutoRNAseq directly inside R:
+
+```r
+install.packages("remotes")
+remotes::install_local("D:/dr_murad/antigravity_MS_project/SeqExpressionAnalyser-master/AutoRNAseq")
+library(AutoRNAseq)
+runAnalyser()
+```
+
+If dependencies are missing on Windows, install `Rtools` first and then use `BiocManager` for the Bioconductor packages.
+
+```r
+install.packages("BiocManager")
+BiocManager::install(c(
+  "Rqc","QuasR","Rsubread","DESeq2","clusterProfiler","enrichplot",
+  "DOSE","org.Hs.eg.db","org.Mm.eg.db","pathview","fgsea","STRINGdb","rtracklayer"
+))
+```
 
 ## What AutoRNAseq does
 
@@ -21,6 +84,16 @@ AutoRNAseq brings the common RNA-seq workflow into one Shiny interface:
 9. Rank candidate biomarkers with machine-learning models.
 10. Produce downloadable tables, plots, and report-ready outputs.
 
+## What is included in the release
+
+- `docker-compose.yml`
+- `Dockerfile`
+- `start-autornaseq-windows.bat`
+- `start-autornaseq-mac-linux.sh`
+- `README_R.md`
+- source package code
+- landing page under `docs/`
+
 ## Why this distribution model
 
 RNA-seq analysis is resource-heavy and often awkward to deploy for non-technical users. AutoRNAseq uses a local Docker workflow instead of a hosted server so it can:
@@ -33,25 +106,21 @@ RNA-seq analysis is resource-heavy and often awkward to deploy for non-technical
 
 ## Quick start
 
-### 1. Install Docker Desktop
+### Docker users
 
-Install and start Docker Desktop before launching AutoRNAseq.
+1. Install and start Docker Desktop.
+2. Run `docker compose up -d --build shinyapp`.
+3. Open `http://localhost:3838`.
+4. Upload your data and run the workflow.
 
-### 2. Launch the app
+### R users
 
-Use the provided startup script or Docker Compose:
+1. Install R and the required dependencies.
+2. Install AutoRNAseq from the local folder or GitHub.
+3. Run `library(AutoRNAseq)`.
+4. Launch the app with `runAnalyser()`.
 
-```bash
-docker compose up -d --build shinyapp
-```
-
-Then open:
-
-```text
-http://localhost:3838
-```
-
-### 3. Run your analysis
+### Run your analysis
 
 Upload your FASTQ files and metadata, then move through the sidebar modules in order:
 
@@ -145,6 +214,6 @@ Portfolio: [harisbio.github.io](https://harisbio.github.io/)
 
 ## Links
 
-- [Project landing page](https://harisbio.github.io/AutoRNAseq/)
-- [Latest release](https://github.com/harisbio/AutoRNAseq/releases/tag/v1.0.0)
+- [Project landing page](docs/index.html)
+- [Latest release](https://github.com/AutoRNAseq/AutoRNAseq/releases/latest)
 - [Author portfolio](https://harisbio.github.io/)
