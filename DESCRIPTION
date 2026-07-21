@@ -1,10 +1,10 @@
 Package: AutoRNAseq
 Title: An R Package for Automated End-to-End RNA-Seq Analysis and Biomarker Discovery
-Version: 2.0.0
+Version: 1.0.0
 Authors@R: 
     person("Muhammad", "Haris", , "mharis.202101862@gcuf.edu.pk", role = c("aut", "cre"),
            comment = c(ORCID = ""))
-Description: AutoRNAseq v2 provides a Shiny web application for 
+Description: AutoRNAseq v1 provides a Shiny web application for 
     interactive and reproducible RNA-Seq differential gene expression analysis,
     downstream functional enrichment (GO, KEGG, GSEA), protein-protein 
     interaction (PPI) network analysis, and machine-learning-based biomarker 

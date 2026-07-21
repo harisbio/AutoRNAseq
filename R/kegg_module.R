@@ -1,6 +1,6 @@
 # ============================================================
 # KEGG Pathway Analysis Module
-# AutoRNAseq v2
+# AutoRNAseq v1.0.0
 # ============================================================
 
 keggAnalysisUI <- function(id) {

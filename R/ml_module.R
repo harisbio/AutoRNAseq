@@ -1,6 +1,6 @@
 # ============================================================
 # Machine Learning Biomarker Discovery Module
-# AutoRNAseq v2
+# AutoRNAseq v1.0.0
 # ============================================================
 
 mlBiomarkerUI <- function(id) {
