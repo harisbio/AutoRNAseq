@@ -1,0 +1,87 @@
+Package: AutoRNAseq
+Title: An R Package for Automated End-to-End RNA-Seq Analysis and Biomarker Discovery
+Version: 2.0.0
+Authors@R: 
+    person("Muhammad", "Haris", , "mharis.202101862@gcuf.edu.pk", role = c("aut", "cre"),
+           comment = c(ORCID = ""))
+Description: AutoRNAseq v2 provides a Shiny web application for 
+    interactive and reproducible RNA-Seq differential gene expression analysis,
+    downstream functional enrichment (GO, KEGG, GSEA), protein-protein 
+    interaction (PPI) network analysis, and machine-learning-based biomarker 
+    discovery. Built on the Shiny framework with Bioconductor packages.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    markdown,
+    knitr
+Imports:
+    Rqc,
+    shiny,
+    DT,
+    shinydashboard,
+    shinyWidgets,
+    shinyalert,
+    shinycssloaders,
+    ggplotify,
+    ggplot2,
+    QuasR,
+    Rsubread,
+    DESeq2,
+    EnhancedVolcano,
+    apeglm,
+    pheatmap,
+    rintrojs,
+    tidyverse,
+    magrittr,
+    RColorBrewer,
+    dplyr,
+    tidyr,
+    stringr,
+    clusterProfiler,
+    enrichplot,
+    DOSE,
+    AnnotationDbi,
+    org.Hs.eg.db,
+    org.Mm.eg.db,
+    pathview,
+    KEGGREST,
+    fgsea,
+    msigdbr,
+    STRINGdb,
+    igraph,
+    visNetwork,
+    ggraph,
+    tidygraph,
+    caret,
+    randomForest,
+    e1071,
+    glmnet,
+    xgboost,
+    pROC,
+    plotly,
+    rmarkdown,
+    BiocParallel,
+    rtracklayer,
+    Biostrings,
+    shinyFiles
+Collate: 
+    'Alignement.R'
+    'DEAnalysis.R'
+    'Pipeline_Automated.R'
+    'Helpers.R'
+    'Pre-processing_Data.R'
+    'Quality_Control.R'
+    'Quantification.R'
+    'setupData.R'
+    'AutoRNAseq-package.R'
+    'cal_z_scores.R'
+    'go_module.R'
+    'kegg_module.R'
+    'gsea_module.R'
+    'ppi_module.R'
+    'ml_module.R'
+    'runAnalyser.R'
+    'zzz.R'
+
