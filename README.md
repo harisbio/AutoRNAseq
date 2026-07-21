@@ -54,7 +54,7 @@ If you want to run AutoRNAseq directly inside R:
 
 ```r
 install.packages("remotes")
-remotes::install_local("D:/dr_murad/antigravity_MS_project/SeqExpressionAnalyser-master/AutoRNAseq")
+remotes::install_local("harisbio/AutoRNAseq")
 library(AutoRNAseq)
 runAnalyser()
 ```
