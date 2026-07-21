@@ -54,7 +54,7 @@ The release package should include:
 
 ## Links
 
-- Landing page: https://harisbio.github.io/AutoRNAseq/#quick-start
+- Landing page: https://harisbio.github.io/AutoRNAseq/
 - Source repository: https://github.com/harisbio/AutoRNAseq
 - Release notes: `RELEASE_NOTES_v1.0.0.md`
 
