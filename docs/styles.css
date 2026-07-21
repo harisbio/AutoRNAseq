@@ -63,24 +63,35 @@ h1 {
 .note { color: #586c7c; }
 .hero-media {
   justify-self: end;
-  width: min(100%, 360px);
-  padding: 18px;
+  width: min(100%, 320px);
+  padding: 16px;
   background: rgba(255,255,255,0.85);
   border: 1px solid #d8e2ea;
   border-radius: 14px;
   box-shadow: 0 16px 35px rgba(19, 32, 43, 0.08);
 }
+.logo-wrap {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  padding: 14px;
+  background: linear-gradient(180deg, #f9fcfe 0%, #eef5fa 100%);
+  border: 1px solid #e2ebf2;
+  border-radius: 12px;
+}
 .hero-logo {
   display: block;
-  width: 100%;
+  width: min(100%, 220px);
   height: auto;
   border-radius: 10px;
+  object-fit: contain;
 }
 .hero-caption {
   display: grid;
   gap: 4px;
   margin-top: 12px;
   color: #31475a;
+  text-align: center;
 }
 .hero-caption strong {
   font-size: 16px;
