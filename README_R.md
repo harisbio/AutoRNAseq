@@ -6,7 +6,7 @@ AutoRNAseq can be used directly as an R package if you already have R installed 
 
 ```r
 install.packages("remotes")
-remotes::install_local("D:/dr_murad/antigravity_MS_project/SeqExpressionAnalyser-master/AutoRNAseq")
+remotes::install_local("harisbio/AutoRNAseq")
 library(AutoRNAseq)
 runAnalyser()
 ```
