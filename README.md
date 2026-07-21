@@ -1,6 +1,6 @@
 # AutoRNAseq
 
-[Open the landing page](https://AutoRNAseq.github.io/AutoRNAseq)
+[Open the landing page](https://harisbio.github.io/AutoRNAseq/))
 
 AutoRNAseq is a Dockerized, browser-based RNA-seq analysis platform for end-to-end transcriptomics workflows and machine-learning-assisted biomarker discovery. It is designed for researchers who want a guided local application instead of a hosted web service, so sequencing data stays on their own machine or institutional system.
 
@@ -214,6 +214,6 @@ Portfolio: [harisbio.github.io](https://harisbio.github.io/)
 
 ## Links
 
-- [Project landing page](docs/index.html)
+- [Project landing page](https://harisbio.github.io/AutoRNAseq/))
 - [Latest release](https://github.com/AutoRNAseq/AutoRNAseq/releases/latest)
 - [Author portfolio](https://harisbio.github.io/)
