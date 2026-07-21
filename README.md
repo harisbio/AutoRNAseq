@@ -214,6 +214,6 @@ Portfolio: [harisbio.github.io](https://harisbio.github.io/)
 
 ## Links
 
-- [Project landing page](https://harisbio.github.io/AutoRNAseq/))
+- [Project landing page](https://harisbio.github.io/AutoRNAseq/)
 - [Latest release](https://github.com/AutoRNAseq/AutoRNAseq/releases/latest)
 - [Author portfolio](https://harisbio.github.io/)
