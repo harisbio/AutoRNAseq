@@ -194,7 +194,6 @@ The package includes example FASTQ files and sample metadata under `inst/extdata
 - `inst/www/` - UI assets, stylesheet, workflow image, and branding
 - `inst/report_templates/` - R Markdown report template
 - `docs/` - public GitHub Pages landing page
-- `manuscript/` - manuscript draft and submission support files
 
 ## License
 
